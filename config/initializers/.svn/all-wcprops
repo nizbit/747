@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/projects/767/!svn/ver/15/AutoJunk/config/initializers
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/projects/767/!svn/ver/8/AutoJunk/config/initializers/mime_types.rb
+END
+index_structures.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/projects/767/!svn/ver/13/AutoJunk/config/initializers/index_structures.rb
+END
+secret_token.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/projects/767/!svn/ver/8/AutoJunk/config/initializers/secret_token.rb
+END
+build_inverted_index.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/767/!svn/ver/17/AutoJunk/config/initializers/build_inverted_index.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/projects/767/!svn/ver/8/AutoJunk/config/initializers/session_store.rb
+END
+tokenizer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/projects/767/!svn/ver/14/AutoJunk/config/initializers/tokenizer.rb
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/projects/767/!svn/ver/8/AutoJunk/config/initializers/inflections.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/projects/767/!svn/ver/8/AutoJunk/config/initializers/backtrace_silencers.rb
+END
+wrap_parameters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/projects/767/!svn/ver/8/AutoJunk/config/initializers/wrap_parameters.rb
+END

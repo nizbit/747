@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/projects/767/!svn/ver/8/AutoJunk/config/environments
+END
+development.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/projects/767/!svn/ver/8/AutoJunk/config/environments/development.rb
+END
+production.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/projects/767/!svn/ver/8/AutoJunk/config/environments/production.rb
+END
+test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/projects/767/!svn/ver/8/AutoJunk/config/environments/test.rb
+END

@@ -1,0 +1,7 @@
+<h1>AutoJunk</h1>
+
+<%= form_tag({:controller => "home", :action => "search"}, :method => "get") do %>
+  <%= label_tag(:query, "Search for:") %>
+  <%= text_field_tag(:query) %>
+  <%= submit_tag("Search") %>
+<% end %>

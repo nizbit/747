@@ -1,0 +1,75 @@
+<%= stylesheet_link_tag "table" %>
+
+<%= render :partial => "search_form" %>
+
+<hr>
+
+<p><b>Results for:</b> <%= @query %></p>
+
+<table id="box-table-a">
+	<thead>
+		<tr>
+			<th>Document Links</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @accumulation.each do |docid| %>
+			<tr>
+				<td>
+					<%= link_to docid.gsub(/[_]/, ' '),
+						:controller => "home",
+						:action => "result",
+						:document => docid %>
+					<br />
+					URL: <%= url_for :controller => "home",
+									 :action => "result", 
+									 :document => docid,
+							 		 :only_path => false %>
+				</td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+
+<!--OUTPUTS ENTIRE INVERTED INDEX-->
+<!--
+<table id="box-table-a">
+	<thead>
+		<tr>
+			<th>Term</th>
+			<th>Document Frequency</th>
+			<th>Term Frequency</th>
+			<th>Postings List</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% $INVERTED_INDEX.keys.each do |key| %>
+			<tr>
+				<td><%= key %></td>
+				<td><%= $INVERTED_INDEX[key].document_frequency %></td>
+				<td><%= $INVERTED_INDEX[key].term_frequency %></td>
+				<td>
+					<table>
+						<thead>
+							<tr>
+								<th>Document ID</th>
+								<th>Term Frequency</th>
+							</tr>
+						</thead>
+						<tbody>
+							<% posting = $INVERTED_INDEX[key].postings_list %>
+							<% while posting != nil %>
+								<tr>
+									<td><%= posting.document_id %></td>
+									<td><%= posting.term_frequency %></td>
+								</tr>
+								<% posting = posting.postings_rest %>
+							<% end %>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>	
+-->
