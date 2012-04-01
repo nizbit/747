@@ -9,10 +9,11 @@ module IndexStructures
   end
   
   class DictionaryEntry
-    attr_accessor :document_frequency, :term_frequency, :postings_list
+    attr_accessor :document_frequency, :inverse_document_frequency, :term_frequency, :postings_list
     
-    def initialize(document_frequency, term_frequency, postings_list)
+    def initialize(document_frequency, inverse_document_frequency, term_frequency, postings_list)
       @document_frequency = document_frequency
+      @inverse_document_frequency = inverse_document_frequency
       @term_frequency = term_frequency
       @postings_list = postings_list
     end

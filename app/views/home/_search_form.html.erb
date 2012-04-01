@@ -3,5 +3,6 @@
 <%= form_tag({:controller => "home", :action => "search"}, :method => "get") do %>
   <%= label_tag(:query, "Search for:") %>
   <%= text_field_tag(:query) %>
-  <%= submit_tag("Search") %>
+  <%= submit_tag("Boolean Search") %>
+  <%= submit_tag("Vector Search") %>
 <% end %>
