@@ -29,7 +29,7 @@
 					</td>
 				</tr>
 			<% end %>
-		<% else %>
+		<% elsif @search_type == "vector" %>
 			<% @accumulation.each do |docid| %>
 				<tr>
 					<td>
@@ -42,6 +42,18 @@
 										 :action => "result", 
 										 :document => docid[0],
 								 		 :only_path => false %>
+						<br />
+						Ranking Score: <%= docid[1] %>
+					</td>
+				</tr>
+			<% end %>
+		<% else %>
+			<% @accumulation.each do |docid| %>
+				<tr>
+					<td>
+						<a href=<%= docid[0] %>><%= docid[0] %></a>
+						<br />
+						URL: <%= docid[0] %>
 						<br />
 						Ranking Score: <%= docid[1] %>
 					</td>
