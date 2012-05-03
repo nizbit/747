@@ -22,13 +22,8 @@ class WebCrawler
         end
         
         # extract url's
-        links = Array.new
         html.scan(/<a\/?[^>]*>/).each do |aTag|
-          links.push(URI.extract(aTag, ['http'])[0])
-        end
-        
-        links.each do |link|
-          url_frontier.push(link)
+          url_frontier.push(URI.extract(aTag, ['http'])[0])
         end
         
         # tokenize
