@@ -11,7 +11,7 @@ class WebCrawler
         
     url_frontier.push(root)
         
-    while !url_frontier.empty? && num_documents < 100
+    while !url_frontier.empty? && num_documents < 5000
       url = url_frontier.pop
       if url != nil && url.include?(root) && !url_repository.has_key?(url)
         p url
